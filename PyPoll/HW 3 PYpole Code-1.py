@@ -1,12 +1,13 @@
 import csv
-
+import os
 # Initialize variables to store the analysis results
 total_votes = 0
 candidate_votes = {}
 candidates = []
 
 # Path to the dataset CSV file
-csv_path = r'C:\Users\askkh\Desktop\Folders\Job Related Stuff\WI Madisin Boot Camp\Module 3\election_data.csv'
+
+csv_path = os.path.join('Resources','election_data.csv') 
 
 # Open and read the CSV file
 with open(csv_path, 'r') as csv_file:
